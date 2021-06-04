@@ -1,5 +1,5 @@
-setwd("~/Desktop/1r/3r trimestre/BOTÀNICA/PRÀCTIQUES/EXCURSIÓ")
-dat <- read.csv("plantesexcursio.csv", sep = ";", stringsAsFactors = TRUE)
+setwd("~/sortida.botanica")
+dat <- read.csv("dadescamp.csv", sep = ";", stringsAsFactors = TRUE)
 
 dist <- dat$DISTÀNCIA.AL.CAMÍ
 dist2 <- factor(dist)
@@ -11,7 +11,7 @@ g <- plot(dat1,
      main = "Variació de la riquesa específica",
      xlab = "Distància al camí",
      ylab = "Riquesa específica",
-     xlim = c(-2,30),
+     xlim = c(0,25),
      ylim = c(0,15),
      frame.plot = FALSE,
      las = 1,
